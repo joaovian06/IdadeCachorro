@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorBackground"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/cachorro"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/digiteIdade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="50dp"
+        android:text="@string/textDigite"
+        android:textColor="@color/colorWhite"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textAlignment="center"/>
+    <EditText
+        android:id="@+id/idadeHumano"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/digiteIdade"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorWhite"
+        android:hint="Idade Humano"
+        android:textColor="@color/colorBlack"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/descobrirIdade"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/idadeHumano"
+        android:layout_centerHorizontal="true"
+        android:text="@string/descobrirIdade"
+        android:layout_marginTop="50dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/idadeCachorro"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descobrirIdade"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="25sp"
+        android:textAlignment="center" />
+
+</RelativeLayout>
